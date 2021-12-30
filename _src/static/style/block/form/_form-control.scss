@@ -1,0 +1,8 @@
+.form-control {
+  display: block;
+  width: 100%;
+
+  &::placeholder {
+    color: #b1b1b8;
+  }
+}

@@ -1,0 +1,44 @@
+// //////////////////////////////////////// font-family
+$ff-main: "Roboto", sans-serif;
+
+// //////////////////////////////////////// font-size
+$fz-main: 16px;
+
+// //////////////////////////////////////// colors 
+$c-main: #000;
+$c-secondary: gray;
+$c-accent: orange;
+
+// //////////////////////////////////////// breakpoints
+$sl: 1499.98px;
+$xl: 1199.98px;
+$lg: 991.98px;
+$md: 767.98px;
+$sm: 575.98px;
+$xs: 425.98px;
+$ss: 359.98px;
+
+// //////////////////////////////////////// grid
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px !important;
+}
+
+.col {
+  margin: 0 15px;
+}
+
+$gap: 30px;
+$c-12: calc(100% - #{$gap});
+$c-11: calc(91.666667% - #{$gap});
+$c-10: calc(83.333333% - #{$gap});
+$c-9: calc(75% - #{$gap});
+$c-8: calc(66.666667% - #{$gap});
+$c-7: calc(58.333333% - #{$gap});
+$c-6: calc(50% - #{$gap});
+$c-5: calc(41.666667% - #{$gap});
+$c-4: calc(33.333333% - #{$gap});
+$c-3: calc(25% - #{$gap});
+$c-2: calc(16.666667% - #{$gap});
+$c-1: calc(8.333333% - #{$gap});
