@@ -1,2 +1,18 @@
 .title {
 }
+
+h1 {
+  font-weight: 900;
+  font-size: 36px;
+  font-family: $ff-main;
+  color: $c-secondary;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 1.2;
+  font-family: $ff-main;
+  text-align: center;
+  color: $c-main;
+}

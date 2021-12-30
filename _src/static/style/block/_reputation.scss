@@ -1,0 +1,123 @@
+.reputation {
+  padding-top: 60px;
+}
+
+.reputation__title {
+  margin-bottom: 28px;
+}
+
+.reputation__text {
+  margin-bottom: 100px;
+
+  font-weight: 300;
+  font-size: $fz-main;
+  font-family: $ff-main;
+  text-align: center;
+  color: $c-accent;
+  letter-spacing: .01em;
+}
+
+.reputation__wrap {
+  position: relative;
+}
+
+.reputation__wrap-plus {
+  padding-top: 180px;
+}
+
+.reputation__plus-text {
+  margin-bottom: 0;
+
+  font-weight: 900;
+  font-size: $fz-main;
+  line-height: 1.2;
+  font-family: $ff-main;
+  text-align: center;
+  color: $c-main;
+}
+
+.reputation__plus-img {
+  margin: 0 auto 25px;
+}
+
+.reputation__img-google {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  transform: translate(-50%, 0);
+}
+
+.reputation__img-flamp {
+  position: absolute;
+  top: 70px;
+  right: 70px;
+}
+
+.reputation__img-otzovik {
+  position: absolute;
+  top: 57px;
+  left: 121px;
+}
+
+.reputation__img-zoon {
+  position: absolute;
+  top: 160px;
+  right: -20px;
+}
+
+.reputation__img-yandex {
+  position: absolute;
+  top: 147px;
+  left: -66px;
+}
+
+.reputation__img-2gis {
+  position: absolute;
+  top: 305px;
+  right: 0;
+}
+
+.reputation__img-yell {
+  position: absolute;
+  top: 365px;
+  left: 0;
+}
+
+.reputation__img-irrecomend {
+  position: absolute;
+  top: 430px;
+  right: 0;
+}
+
+.reputation__img-social {
+  position: absolute;
+  top: 489px;
+  left: 30px;
+}
+
+.reputation__img-text {
+  padding: 18px;
+
+  text-align: center;
+
+  border-radius: 31.5px;
+
+  &--social {
+    min-width: 220px;
+
+    background-color: #f6f6f6;
+  }
+
+  &--marketplaces {
+    min-width: 178px;
+
+    background-color: #f7f4ff;
+  }
+}
+
+.reputation__img-marketplaces {
+  position: absolute;
+  top: 520px;
+  right: 95px;
+}

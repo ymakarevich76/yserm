@@ -1,2 +1,53 @@
 .header {
+  position: absolute;
+
+  width: 100%;
+}
+
+.header__container {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  max-width: 1105px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+
+    display: block;
+    width: calc(100% - 60px);
+    height: 1px;
+
+    background-color: #cfc6fd;
+  }
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  width: 620px;
+  margin-right: auto;
+}
+
+.header__logo {
+  margin-right: auto;
+}
+
+.header__right {
+  display: flex;
+  justify-content: flex-end;
+  width: calc(100% - 80%);
+}
+
+
+.header__phone {
+  font-weight: 900;
+  font-size: $fz-main;
+  font-family: $ff-main;
+  color: $c-main;
 }

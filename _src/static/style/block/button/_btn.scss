@@ -1,2 +1,13 @@
-.btn {
+.btn-white {
+  min-width: 190px;
+  padding: 15px;
+
+  font-weight: 900;
+  font-size: 20px;
+  font-family: $ff-main;
+  color: $c-accent;
+  text-transform: lowercase;
+
+  background-color: $c-secondary;
+  border-radius: 30px;
 }
