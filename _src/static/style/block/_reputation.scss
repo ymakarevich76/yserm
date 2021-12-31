@@ -1,24 +1,20 @@
 .reputation {
   padding-top: 60px;
+  padding-bottom: 110px;
 }
 
 .reputation__title {
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 
-.reputation__text {
-  margin-bottom: 100px;
-
-  font-weight: 300;
-  font-size: $fz-main;
-  font-family: $ff-main;
-  text-align: center;
-  color: $c-accent;
-  letter-spacing: .01em;
+.reputation__subtitle {
+  margin-bottom: 105px;
 }
 
 .reputation__wrap {
   position: relative;
+
+  min-height: 680px;
 }
 
 .reputation__wrap-plus {
@@ -50,8 +46,8 @@
 
 .reputation__img-flamp {
   position: absolute;
-  top: 70px;
-  right: 70px;
+  top: 65px;
+  right: 65px;
 }
 
 .reputation__img-otzovik {
@@ -112,7 +108,19 @@
   &--marketplaces {
     min-width: 178px;
 
-    background-color: #f7f4ff;
+    background-color: $c-light;
+  }
+
+  &--ad {
+    min-width: 218px;
+
+    background-color: #ecf3fa;
+  }
+
+  &--forum {
+    min-width: 252px;
+
+    background-color: #eff1ff;
   }
 }
 
@@ -120,4 +128,17 @@
   position: absolute;
   top: 520px;
   right: 95px;
+}
+
+
+.reputation__img-ad {
+  position: absolute;
+  top: 600px;
+  left: 192px;
+}
+
+.reputation__img-forum {
+  position: absolute;
+  top: 620px;
+  right: 253px;
 }

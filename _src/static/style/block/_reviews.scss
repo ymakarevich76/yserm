@@ -1,0 +1,31 @@
+.reviews {
+  padding-top: 105px;
+  padding-bottom: 105px;
+
+  background-color: $c-light;
+}
+
+.reviews__title {
+  margin-bottom: 25px;
+}
+
+.reviews__subtitle {
+  margin-bottom: 65px;
+}
+
+.reviews__text {
+  margin-bottom: 65px;
+}
+
+.reviews__wrap {
+  display: flex;
+}
+
+.reviews__slider {
+  width: 51.5%;
+}
+
+.reviews__desc {
+  width: calc(100% - 51.5% - 65px);
+  margin-left: 65px;
+}

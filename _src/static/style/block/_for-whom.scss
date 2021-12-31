@@ -1,0 +1,54 @@
+.for-whom {
+  height: 680px;
+  padding-top: 110px;
+
+  background: $c-light url("../img/bc/2.png") no-repeat top center;
+  background-size: 100%;
+}
+
+.for-whom__title {
+  margin-bottom: 25px;
+
+  color: $c-secondary;
+}
+
+.for-whom__subtitle {
+  margin-bottom: 75px;
+
+  color: $c-light;
+}
+
+.for-whom__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px !important;
+}
+
+.for-whom__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% / 4 - 30px);
+  margin: 0 15px;
+}
+
+.for-whom__wrap-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 160px;
+  margin-bottom: 35px;
+
+  background-color: $c-light;
+  border-radius: 50%;
+}
+
+.for-whom__desc {
+  font-weight: 300;
+  font-size: $fz-main;
+  line-height: 1.2;
+  font-family: $ff-main;
+  text-align: center;
+  color: $c-light;
+}

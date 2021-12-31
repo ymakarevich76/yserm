@@ -10,4 +10,74 @@
 
   background-color: $c-secondary;
   border-radius: 30px;
+
+  transition: .3s;
+
+  &:hover {
+    color: $c-secondary;
+
+    background-color: $c-accent;
+  }
+}
+
+.btn {
+  min-width: 190px;
+  padding: 15px;
+
+  font-weight: 900;
+  font-size: 20px;
+  font-family: $ff-main;
+  color: $c-secondary;
+  text-transform: lowercase;
+
+  background: linear-gradient(135deg, #8d71f1, #ae78e0);
+  border-radius: 30px;
+
+  transition: .3s;
+
+  &:hover {
+    text-decoration: none;
+
+    background: linear-gradient(135deg, #ae78e0, #8d71f1);
+  }
+}
+
+
+.btn-box {
+  position: absolute;
+  bottom: 20%;
+
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.btn-next,
+.btn-prev {
+  z-index: 10;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: auto;
+}
+
+.btn-prev {
+  margin-left: 40px;
+}
+
+.btn-next {
+  margin-right: 40px;
+}
+
+.btn-prev svg {
+  transform: rotate(-180deg);
+}
+
+.btn-box svg {
+  width: 30px;
+  height: 30px;
+
+  fill: #fbfcf6;
 }

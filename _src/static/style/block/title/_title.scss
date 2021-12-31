@@ -16,3 +16,13 @@ h2 {
   text-align: center;
   color: $c-main;
 }
+
+.title-sub {
+  font-weight: 300;
+  font-size: $fz-main;
+  line-height: 1.2;
+  font-family: $ff-main;
+  text-align: center;
+  color: $c-accent;
+  letter-spacing: .01em;
+}
