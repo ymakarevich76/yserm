@@ -65,10 +65,26 @@
 
 .btn-prev {
   margin-left: 40px;
+
+  @media (max-width: $lg) {
+    margin-left: 15px;
+  }
+
+  @media (max-width: $md) {
+    margin-left: 25px;
+  }
 }
 
 .btn-next {
   margin-right: 40px;
+
+  @media (max-width: $lg) {
+    margin-right: 15px;
+  }
+
+  @media (max-width: $md) {
+    margin-right: 25px;
+  }
 }
 
 .btn-prev svg {

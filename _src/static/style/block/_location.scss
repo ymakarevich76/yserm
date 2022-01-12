@@ -1,0 +1,104 @@
+.location {
+  padding-top: 105px;
+  padding-bottom: 120px;
+
+  @media (max-width: $lg) {
+    padding: 80px 0;
+  }
+}
+
+.location__title {
+  margin-bottom: 25px;
+}
+
+.location__subtitle {
+  margin-bottom: 55px;
+}
+
+
+.location__wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.location__wrap-img {
+  width: calc(50% - 15px);
+  margin-right: 15px;
+
+  @media (max-width: $lg) {
+    // display: flex;
+    // justify-content: center;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.location__desc {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(50% - 15px);
+  margin-left: 15px;
+
+  @media (max-width: $lg) {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.location__form {
+  width: calc(50% - 15px);
+  margin-right: 15px;
+
+  @media (max-width: $sm) {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.location__list {
+  width: calc(50% - 15px);
+  margin-top: -5px;
+  margin-left: 15px;
+
+  @media (max-width: $sm) {
+    order: -1;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-left: 0;
+  }
+}
+
+.location__item {
+  position: relative;
+
+  padding-left: 28px;
+
+  font-weight: 300;
+  font-size: $fz-secondary;
+  line-height: 30px;
+  font-family: $ff-main;
+  color: $c-main;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    background: url("../img/icon/check-solid.svg") no-repeat center center;
+    background-size: 100%;
+    transform: translate(0, -50%);
+  }
+}
+
+.location__btn {
+  min-width: 100%;
+  padding: 8px;
+
+  font-size: $fz-main;
+}

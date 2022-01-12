@@ -1,0 +1,64 @@
+
+.card {
+  width: calc(100% / 3 - 16px);
+  margin: 0 8px;
+  padding: 40px 28px 30px;
+
+  background-color: $c-secondary;
+  border-radius: 20px;
+
+  @media (max-width: $md) {
+    width: calc(100% - 16px);
+    margin-bottom: 16px;
+  }
+
+  &:nth-child(1) {
+    max-height: 460px;
+
+    @media (max-width: $lg) {
+      max-height: 540px;
+    }
+  }
+
+  &:nth-child(3) {
+    max-height: 555px;
+
+    @media (max-width: $lg) {
+      max-height: 685px;
+    }
+  }
+}
+
+.card__name {
+  margin-bottom: 15px;
+
+  text-align: center;
+}
+
+.card__text {
+  margin-bottom: 25px;
+
+  font-weight: 300;
+  font-size: $fz-secondary;
+  line-height: 24px;
+  font-family: $ff-main;
+
+  @media (max-width: $md) {
+    text-align: center;
+  }
+}
+
+.card__cost {
+  margin-bottom: 15px;
+
+  font-weight: 900;
+  font-size: 24px;
+  font-family: $ff-main;
+  text-align: center;
+  color: $c-accent;
+}
+
+.card__wrap-btn {
+  display: flex;
+  justify-content: center;
+}

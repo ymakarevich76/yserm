@@ -1,0 +1,35 @@
+.converion {
+  height: auto;
+  padding-top: 140px;
+  padding-bottom: 170px;
+
+  background: url("../img/bc/converion-bc.png") no-repeat top center;
+  background-size: cover;
+
+  @media (max-width: $md) {
+    padding-top: 100px;
+    padding-bottom: 215px;
+  }
+}
+
+.converion__title {
+  margin-bottom: 30px;
+
+  color: $c-secondary;
+}
+
+.converion__subtitle {
+  margin-bottom: 50px;
+
+  color: $c-secondary;
+
+  @media (max-width: $md) {
+    margin-bottom: 25px;
+  }
+}
+
+.converion__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -8px !important;
+}

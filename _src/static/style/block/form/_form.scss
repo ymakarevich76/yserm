@@ -1,2 +1,37 @@
 .form {
 }
+
+
+.form__input {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 10px 20px 5px;
+
+  font-weight: 300;
+  font-size: $fz-secondary;
+  line-height: 30px;
+  font-family: $ff-main;
+
+  border: none;
+  border-radius: 22px;
+  outline: none;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .15);
+
+
+  &::placeholder {
+    color: #666;
+  }
+}
+
+select.form__input {
+  padding: 8px 20px;
+
+  font-weight: 900;
+  color: $c-main;
+
+  background: url("../img/icon/sort-down-solid.svg") no-repeat 93% 35%;
+  background-size: 16px;
+
+  appearance: none;
+}

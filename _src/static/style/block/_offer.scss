@@ -1,0 +1,24 @@
+.offer {
+  position: relative;
+  z-index: 50;
+
+  margin-top: -130px;
+  padding-top: 170px;
+  padding-bottom: 85px;
+
+  background-color: #f6efff;
+}
+
+.offer__title {
+  margin-bottom: 25px;
+}
+
+.offer__subtitle {
+  margin-bottom: 50px;
+}
+
+.offer__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -8px !important;
+}

@@ -1,3 +1,11 @@
 .reviews-slider {
   margin-bottom: 34px;
 }
+
+.reviews-slider__wrap-img {
+  & img {
+    @media (max-width: $md) {
+      width: 100%;
+    }
+  }
+}

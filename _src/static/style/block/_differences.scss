@@ -1,0 +1,113 @@
+.differences {
+  position: relative;
+  z-index: 10;
+
+  height: auto;
+  padding-top: 130px;
+  padding-bottom: 180px;
+
+  background: url("../img/bc/differences-bc.png") no-repeat top center;
+  background-size: cover;
+
+  @media (max-width: $md) {
+    padding-top: 100px;
+    padding-bottom: 225px;
+  }
+
+  @media (max-width: $sm) {
+    margin-top: -40px;
+  }
+
+  @media (max-width: $xs) {
+    margin-top: -200px;
+  }
+}
+
+.differences__title {
+  margin-bottom: 30px;
+
+  color: $c-secondary;
+}
+
+.differences__subtitle {
+  max-width: 730px;
+  margin: 0 auto 60px;
+
+  color: $c-secondary;
+}
+
+.differences__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -9px !important;
+  margin-bottom: 60px;
+}
+
+.differences__col {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 5 - 18px);
+  margin: 0 9px 20px;
+
+  @media (max-width: $lg) {
+    width: calc(100% / 3 - 18px);
+  }
+
+  @media (max-width: $md) {
+    width: calc(100% - 18px);
+  }
+}
+
+
+.differences__text {
+  display: flex;
+  align-items: center;
+  // width: calc(100% / 4 - 18px);
+  min-width: 178px;
+  // margin: 0 9px 20px;
+  margin-bottom: 20px;
+  padding: 11px 35px;
+
+  font-weight: 300;
+  font-size: $fz-secondary;
+  line-height: 1.2;
+  font-family: $ff-main;
+  color: $c-main;
+
+  background-color: #f6efff;
+  border-radius: 31.5px;
+
+  &:first-child {
+    margin-bottom: 40px;
+
+    font-weight: 900;
+    font-size: $fz-main;
+  }
+
+  .differences__col:nth-child(2) & {
+    background-color: #ecf3fa;
+  }
+
+  .differences__col:nth-child(3) & {
+    background-color: #faedf7;
+  }
+
+  .differences__col:nth-child(4) & {
+    background-color: #ece5fb;
+  }
+
+  .differences__col:nth-child(5) & {
+    background-color: #fbfcf6;
+  }
+}
+
+.differences__wrap-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.differences__btn {
+  min-width: 230px;
+
+  background: $c-main;
+}

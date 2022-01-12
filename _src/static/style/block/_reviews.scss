@@ -3,6 +3,10 @@
   padding-bottom: 105px;
 
   background-color: $c-light;
+
+  @media (max-width: $md) {
+    padding: 60px 0;
+  }
 }
 
 .reviews__title {
@@ -15,17 +19,32 @@
 
 .reviews__text {
   margin-bottom: 65px;
+
+  @media (max-width: $md) {
+    margin-bottom: 30px;
+  }
 }
 
 .reviews__wrap {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .reviews__slider {
   width: 51.5%;
+
+  @media (max-width: $md) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
 .reviews__desc {
   width: calc(100% - 51.5% - 65px);
   margin-left: 65px;
+
+  @media (max-width: $md) {
+    width: 100%;
+    margin-left: 0;
+  }
 }

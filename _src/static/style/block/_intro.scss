@@ -1,9 +1,18 @@
 .intro {
-  height: 670px;
+  height: 100%;
   padding-top: 178px;
+  padding-bottom: 220px;
 
   background: url("../img/bc/1.png") no-repeat top center;
-  background-size: 100%;
+  background-size: cover;
+
+  @media (max-width: $xl) {
+    padding-top: 105px;
+  }
+
+  @media (max-width: $lg) {
+    padding-top: 100px;
+  }
 }
 
 .intro__container {
@@ -12,6 +21,10 @@
 
 .intro__title {
   margin-bottom: 50px;
+
+  @media (max-width: $lg) {
+    margin-bottom: 20px;
+  }
 }
 
 .intro__text {
@@ -22,6 +35,16 @@
   line-height: 1.2;
   font-family: $ff-main;
   color: $c-secondary;
+
+  @media (max-width: $lg) {
+    margin-bottom: 20px;
+  }
+
+  & br {
+    @media (max-width: $md) {
+      display: none;
+    }
+  }
 }
 
 
@@ -36,6 +59,13 @@
   font-family: $ff-main;
   color: $c-secondary;
 
+  transition: .3s;
+
+  &:hover {
+    color: $c-accent;
+    text-decoration: none;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -47,5 +77,9 @@
     height: 1px;
 
     background-color: $c-secondary;
+  }
+
+  &:hover::after {
+    background-color: $c-accent;
   }
 }

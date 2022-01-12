@@ -13,4 +13,11 @@
   font-size: 16px;
   font-family: $ff-main;
   color: $c-main;
+
+  transition: .3s;
+
+  &:hover {
+    color: $c-accent;
+    text-decoration: none;
+  }
 }

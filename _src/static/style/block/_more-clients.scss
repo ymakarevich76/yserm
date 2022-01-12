@@ -1,0 +1,31 @@
+.more-clients {
+  margin-top: -170px;
+  padding-top: 200px;
+  padding-bottom: 110px;
+
+  background-color: #f6efff;
+
+  @media (max-width: $md) {
+    margin-top: -230px;
+    padding-top: 115px;
+    padding-bottom: 60px;
+  }
+}
+
+.more-clients__title {
+  margin-bottom: 30px;
+}
+
+.more-clients__subtitle {
+  margin-bottom: 45px;
+}
+
+.more-clients__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -8px !important;
+}
+
+.more-clients__tabs {
+  margin-bottom: 35px;
+}

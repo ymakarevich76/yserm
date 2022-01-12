@@ -1,0 +1,82 @@
+.shopper {
+  height: auto;
+  padding-top: 190px;
+  padding-bottom: 50px;
+
+  background: url("../img/bc/complex-bc.png") no-repeat top center;
+  background-size: 100%;
+
+  @media (max-width: $md) {
+    background-size: auto;
+  }
+}
+
+.shopper__title {
+  margin-bottom: 35px;
+}
+
+.shopper__subtitle {
+  margin-bottom: 50px;
+}
+
+.shopper__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -8px !important;
+}
+
+.shopper__block {
+  width: calc(100% / 3 - 16px);
+  margin: 0 8px;
+  padding: 35px 28px 40px;
+
+  background-color: #f9f9f9;
+  border-radius: 20px;
+
+  @media (max-width: $md) {
+    width: calc(100% - 16px);
+    margin-bottom: 16px;
+  }
+}
+
+.shopper__name {
+  margin-bottom: 20px;
+
+  color: $c-accent;
+}
+
+.shopper__text {
+  margin-bottom: 20px;
+
+  font-weight: 300;
+  font-size: $fz-secondary;
+  line-height: 1.2;
+  font-family: $ff-main;
+}
+
+.shopper__item {
+  position: relative;
+
+  margin-bottom: 7px;
+  padding-left: 30px;
+
+  font-weight: 300;
+  font-size: $fz-secondary;
+  line-height: 1.2;
+  font-family: $ff-main;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    display: block;
+    width: 14px;
+    height: 14px;
+
+    background: url("../img/icon/check.svg") no-repeat center center;
+    background-size: 100%;
+    transform: translate(0, -50%);
+  }
+}

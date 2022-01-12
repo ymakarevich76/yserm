@@ -1,0 +1,96 @@
+.tabs-radio {
+  padding: 10px 0;
+}
+
+.tabs-radio__box-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 257px;
+  margin: 0 auto;
+}
+
+.tabs-radio__btn {
+  position: relative;
+
+  padding-left: 25px;
+
+  font-size: $fz-main;
+  font-family: $ff-main;
+  color: $c-main;
+
+  cursor: pointer;
+
+  transition: .3s;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #f9f9f9;
+  }
+
+  &--active,
+  &:hover {
+    font-weight: 900;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    display: block;
+    width: 18px;
+    height: 18px;
+
+    border: 2px solid $c-main;
+    border-radius: 50%;
+    transform: translate(0, -50%);
+  }
+
+  &--active {
+  }
+
+  &--active::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 6px;
+
+    display: block;
+    width: 6px;
+    height: 6px;
+
+    background-color: $c-main;
+    border-radius: 50%;
+  }
+}
+
+.tabs-radio__content {
+  position: relative;
+
+  display: none;
+
+  &--active {
+    display: block;
+
+    color: $c-main;
+  }
+}
+
+.tabs-radio__text-content {
+  width: 587px;
+  height: 600px;
+  padding: 50px 35px;
+
+  background: url("../img/bc/promotion-bc.png") no-repeat;
+  background-size: 100%;
+}
+
+.tabs-radio__title {
+  margin-bottom: 25px;
+
+  font-weight: 900;
+  font-size: $fz-main;
+  font-family: $ff-main;
+  color: $c-accent;
+}

@@ -2,6 +2,10 @@
   padding-bottom: 115px;
 
   background: linear-gradient(180deg, #f7f4ff, #fbfcf6);
+
+  @media (max-width: $lg) {
+    padding-bottom: 80px;
+  }
 }
 
 .advertising__title {
@@ -14,6 +18,10 @@
 
 .advertising__wrap {
   display: flex;
+  flex-wrap: wrap;
+  @media (max-width: $md) {
+    justify-content: center;
+  }
 }
 
 .advertising__wrap-desc {
@@ -21,6 +29,11 @@
   flex-wrap: wrap;
   width: 48.5%;
   margin: 0 -10px !important;
+
+  @media (max-width: $lg) {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .advertising__text {
@@ -56,23 +69,57 @@
 
     background-color: #edf6ff;
   }
+
+  @media (max-width: $md) {
+    width: calc(100% - 20px);
+  }
 }
 
 .advertising__desc {
   width: calc(100% - 20px);
   margin: 0 10px;
+
+  @media (max-width: $lg) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
-.advertising__wrap-img {
+.advertising__wrap-img-btn {
+  display: flex;
+  flex-direction: column;
   width: calc(100% - 46.5% - 20px);
   margin-left: 20px;
 
+  @media (max-width: $lg) {
+    align-items: center;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.advertising__wrap-img {
+  @media (max-width: $lg) {
+    // display: flex;
+    // justify-content: center;
+    margin-bottom: 30px;
+  }
+
   & img {
     margin-bottom: 180px;
+
+    @media (max-width: $lg) {
+      margin-bottom: 0;
+    }
   }
 }
 
 .advertising__wrap-btn {
   display: flex;
   justify-content: center;
+  width: 100%;
+
+  @media (max-width: $lg) {
+    justify-content: center;
+  }
 }

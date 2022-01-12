@@ -3,15 +3,16 @@ body {
   flex-direction: column;
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden;
 
   font-size: $fz-main;
   font-family: $ff-main;
   color: $c-main;
-  // overflow-x: hidden;
 }
 
 .main {
   flex-grow: 1;
+  overflow-x: hidden;
 }
 
 img {

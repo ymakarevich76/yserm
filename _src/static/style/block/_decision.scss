@@ -1,0 +1,132 @@
+.decision {
+  margin-top: -80px;
+  margin-bottom: 70px;
+  padding-top: 140px;
+
+  background: url("../img/bc/ball.png") no-repeat 0 -5%;
+  background-size: auto;
+
+  @media (max-width: $md) {
+    margin-top: -140px;
+    padding-top: 100px;
+
+    background-position: 0 0;
+  }
+
+  @media (max-width: $sm) {
+    margin-top: -240px;
+  }
+}
+
+.decision__container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 115px;
+
+  @media (max-width: $md) {
+    margin-bottom: 25px;
+  }
+}
+
+.decision__wrap-img {
+  width: 55%;
+
+  @media (max-width: $md) {
+    width: 100%;
+  }
+
+  & img {
+    width: 100%;
+  }
+}
+
+.decision__wrap-desc {
+  width: calc(45% - 30px);
+  margin-top: 50px;
+  margin-left: 30px;
+
+  @media (max-width: $md) {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.decision__title {
+  margin-bottom: 30px;
+
+  text-align: left;
+}
+
+.decision__subtitle {
+  margin-bottom: 45px;
+
+  text-align: left;
+}
+
+.decision__text {
+  margin-bottom: 55px;
+}
+
+.decision__btn {
+  background: $c-main;
+}
+
+.decision__form {
+  padding-top: 140px;
+  padding-bottom: 180px;
+
+  background: url("../img/bc/bc-ball.png") no-repeat;
+  background-size: cover;
+
+  @media (max-width: $md) {
+    padding-top: 90px;
+  }
+}
+
+.decision__form-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.decision__form-group {
+  width: calc((100% - 19%) / 3 - 16px);
+  margin: 0 8px;
+
+  &:nth-child(3) {
+    align-self: self-end;
+  }
+
+  &:last-child {
+    align-self: self-end;
+    width: calc(19% - 16px);
+
+    @media (max-width: $lg) {
+      display: flex;
+      justify-content: center;
+      width: calc(100% - 16px);
+      margin-top: 15px;
+    }
+  }
+
+  @media (max-width: $lg) {
+    width: calc(100% / 3 - 16px);
+  }
+
+  @media (max-width: $md) {
+    width: calc(100% / 2 - 16px);
+  }
+
+  @media (max-width: $sm) {
+    width: calc(100% - 16px);
+  }
+}
+
+.decision__form-btn {
+  min-width: 167px;
+  margin-bottom: 5px;
+  padding: 6px;
+}
+
+.decision__form .form__input {
+  background-color: $c-secondary;
+}

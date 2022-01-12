@@ -1,0 +1,52 @@
+.promotion {
+  height: auto;
+  padding-top: 190px;
+  padding-bottom: 95px;
+
+  background: url("../img/bc/complex-bc.png") no-repeat top center;
+  background-size: 100%;
+
+  @media (max-width: $md) {
+    padding-top: 150px;
+    padding-bottom: 0;
+
+    background-size: auto;
+  }
+}
+
+.promotion__title {
+  margin-bottom: 35px;
+
+  @media (max-width: $md) {
+    margin-bottom: 15px;
+  }
+}
+
+.promotion__subtitle {
+  margin-bottom: 65px;
+
+  @media (max-width: $lg) {
+    margin-bottom: 20px;
+  }
+}
+
+.promotion__wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.promotion__tabs {
+  width: 41%;
+
+  @media (max-width: $lg) {
+    width: 100%;
+  }
+}
+
+.promotion__content {
+  width: 59%;
+
+  @media (max-width: $lg) {
+    width: 100%;
+  }
+}

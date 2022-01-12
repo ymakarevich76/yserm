@@ -1,6 +1,11 @@
 .reputation {
   padding-top: 60px;
   padding-bottom: 110px;
+
+  @media (max-width: $md) {
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
 }
 
 .reputation__title {
@@ -9,6 +14,10 @@
 
 .reputation__subtitle {
   margin-bottom: 105px;
+
+  @media (max-width: $md) {
+    margin-bottom: 40px;
+  }
 }
 
 .reputation__wrap {
@@ -19,6 +28,10 @@
 
 .reputation__wrap-plus {
   padding-top: 180px;
+
+  @media (max-width: $md) {
+    padding-top: 0;
+  }
 }
 
 .reputation__plus-text {
@@ -30,10 +43,23 @@
   font-family: $ff-main;
   text-align: center;
   color: $c-main;
+
+  @media (max-width: $lg) {
+    max-width: 235px;
+    margin: 0 auto;
+  }
 }
 
 .reputation__plus-img {
   margin: 0 auto 25px;
+}
+
+.reputation__img {
+  @media (max-width: $md) {
+    & img {
+      margin: 0 auto;
+    }
+  }
 }
 
 .reputation__img-google {
@@ -42,54 +68,115 @@
   left: 50%;
 
   transform: translate(-50%, 0);
+
+  @media (max-width: $md) {
+    position: relative;
+    top: 20px;
+    left: 0;
+
+    transform: translate(0, 0);
+  }
 }
 
 .reputation__img-flamp {
   position: absolute;
   top: 65px;
   right: 65px;
+
+  @media (max-width: $md) {
+    position: relative;
+    top: 40px;
+    right: 0;
+
+    transform: translate(0, 0);
+  }
 }
 
 .reputation__img-otzovik {
   position: absolute;
   top: 57px;
   left: 121px;
+
+  @media (max-width: $md) {
+    position: relative;
+    top: 50px;
+    left: 0;
+  }
 }
 
 .reputation__img-zoon {
   position: absolute;
   top: 160px;
   right: -20px;
+
+  @media (max-width: $md) {
+    position: relative;
+    top: 20px;
+    right: 0;
+  }
 }
 
 .reputation__img-yandex {
   position: absolute;
   top: 147px;
   left: -66px;
+
+  @media (max-width: $md) {
+    position: relative;
+    top: -40px;
+    left: 0;
+  }
 }
 
 .reputation__img-2gis {
   position: absolute;
   top: 305px;
   right: 0;
+
+  @media (max-width: $md) {
+    position: relative;
+    top: -40px;
+    right: 0;
+  }
 }
 
 .reputation__img-yell {
   position: absolute;
   top: 365px;
   left: 0;
+
+  @media (max-width: $md) {
+    position: relative;
+    top: -15px;
+    left: 0;
+  }
 }
 
 .reputation__img-irrecomend {
   position: absolute;
   top: 430px;
   right: 0;
+
+  @media (max-width: $md) {
+    position: relative;
+    top: 10px;
+    right: 0;
+  }
 }
 
 .reputation__img-social {
   position: absolute;
   top: 489px;
   left: 30px;
+
+  @media (max-width: $lg) {
+    left: 0;
+  }
+
+  @media (max-width: $md) {
+    position: relative;
+    top: 25px;
+  }
 }
 
 .reputation__img-text {
@@ -128,17 +215,46 @@
   position: absolute;
   top: 520px;
   right: 95px;
-}
 
+  @media (max-width: $lg) {
+    right: 50px;
+  }
+
+  @media (max-width: $md) {
+    position: relative;
+    top: 25px;
+    left: 0;
+  }
+}
 
 .reputation__img-ad {
   position: absolute;
   top: 600px;
   left: 192px;
+
+  @media (max-width: $lg) {
+    left: 65px;
+  }
+
+  @media (max-width: $md) {
+    position: relative;
+    top: 25px;
+    left: 0;
+  }
 }
 
 .reputation__img-forum {
   position: absolute;
   top: 620px;
   right: 253px;
+
+  @media (max-width: $lg) {
+    right: 120px;
+  }
+
+  @media (max-width: $md) {
+    position: relative;
+    top: 25px;
+    left: 0;
+  }
 }

@@ -3,6 +3,10 @@
   padding-bottom: 105px;
 
   background-color: #fbfcf6;
+
+  @media (max-width: $lg) {
+    padding: 80px 0;
+  }
 }
 
 .services__title {
@@ -48,5 +52,17 @@
   }
   &--7 {
     background-color: #eff1ff;
+  }
+
+  @media (max-width: $lg) {
+    width: calc(100% / 3 - 20px);
+  }
+
+  @media (max-width: $md) {
+    width: calc(100% / 2 - 20px);
+  }
+
+  @media (max-width: $sm) {
+    width: calc(100% - 20px);
   }
 }

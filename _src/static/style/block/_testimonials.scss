@@ -1,0 +1,21 @@
+.testimonials {
+  padding-bottom: 115px;
+
+  @media (max-width: $sm) {
+    margin-top: -130px;
+    padding-bottom: 50px;
+  }
+}
+
+.testimonials__title {
+  margin-bottom: 30px;
+}
+
+.testimonials__subtitle {
+  margin-bottom: 60px;
+}
+
+.testimonials__wrap-img {
+  display: flex;
+  justify-content: center;
+}

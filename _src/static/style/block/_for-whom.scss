@@ -1,9 +1,14 @@
 .for-whom {
-  height: 680px;
   padding-top: 110px;
+  padding-bottom: 160px;
 
   background: $c-light url("../img/bc/2.png") no-repeat top center;
-  background-size: 100%;
+  // background-size: 100%;
+  background-size: cover;
+
+  @media (max-width: $lg) {
+    padding-top: 70px;
+  }
 }
 
 .for-whom__title {
@@ -30,6 +35,10 @@
   align-items: center;
   width: calc(100% / 4 - 30px);
   margin: 0 15px;
+
+  @media (max-width: $md) {
+    width: calc(100% / 2 - 30px);
+  }
 }
 
 .for-whom__wrap-img {
@@ -42,6 +51,11 @@
 
   background-color: $c-light;
   border-radius: 50%;
+
+  @media (max-width: $md) {
+    width: 120px;
+    height: 120px;
+  }
 }
 
 .for-whom__desc {
