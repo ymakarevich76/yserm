@@ -5,3 +5,5 @@
 @@include('block/__validation.js');
 @@include('block/__nav.js');
 @@include('block/__tabs.js');
+@@include('block/__scroll.js');
+@@include('block/__comparison.js');

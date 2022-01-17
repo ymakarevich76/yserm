@@ -28,6 +28,8 @@
     "bootstrap": "^4.6.0",
     "jquery": "^3.6.0",
     "jquery.maskedinput": "^1.4.1",
-    "swiper": "^7.4.1"
+    "simplebar": "^5.3.6",
+    "swiper": "^7.4.1",
+    "zurb-twentytwenty": "^0.1.1"
   }
 }

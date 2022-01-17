@@ -1,0 +1,14 @@
+.twentytwenty-horizontal .twentytwenty-before-label:before,
+.twentytwenty-horizontal .twentytwenty-after-label:before {
+  top: 90%;
+
+  margin-top: 0;
+
+  font-weight: 300;
+  font-size: $fz-main;
+  font-family: $ff-main;
+  color: $c-main;
+  text-transform: lowercase;
+
+  background: transparent;
+}

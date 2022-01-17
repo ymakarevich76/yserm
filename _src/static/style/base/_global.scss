@@ -4,6 +4,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   overflow-x: hidden;
+  overflow-y: scroll;
 
   font-size: $fz-main;
   font-family: $ff-main;
